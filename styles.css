@@ -32,6 +32,9 @@ body
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	/* background-image: linear-gradient(140deg, #9AECDB,#F8EFBA,#D6A2E8,#55E6C1,#d1d8e0,#fed330,#feac5e,#c779d0,#4bc0c8,#EAECC6,#bdc3c7,#00FF00,#81ecec,#fab1a0,#55efc4,#ffeaa7,#d2dae2);
+    background-size: 600%;
+    animation: bganimation 113s infinite; */
 }
 .container .box:before
 {
@@ -41,9 +44,14 @@ body
 	left: 0;
 	width: 50%;
 	height: 100%;
-	background: #fff;
+	/* background: #fff; */
 	z-index: 1;
 	transition: 0.5s;
+	background-image: linear-gradient(140deg, #9AECDB,#F8EFBA,#D6A2E8,#55E6C1,#d1d8e0,#fed330,#feac5e,#c779d0,#4bc0c8,#EAECC6,#bdc3c7,#00FF00,#81ecec,#fab1a0,#55efc4,#ffeaa7,#d2dae2);
+    background-size: 6600%;
+    animation: bganimation 113s infinite;
+
+
 }
 .container .box:after
 {
@@ -53,9 +61,13 @@ body
 	right: 0;
 	width: 50%;
 	height: 100%;
-	background: #fff;
+	/* background: #fff; */
 	z-index: 1;
 	transition: 0.5s;
+	background-image: linear-gradient(140deg, #9AECDB,#F8EFBA,#D6A2E8,#55E6C1,#d1d8e0,#fed330,#feac5e,#c779d0,#4bc0c8,#EAECC6,#bdc3c7,#00FF00,#81ecec,#fab1a0,#55efc4,#ffeaa7,#d2dae2);
+    background-size: 6600%;
+    animation: bganimation 113s infinite;
+
 }
 .container:hover .box:before
 {
@@ -87,7 +99,7 @@ body
   }
 }
 .animate{
-  background-image: linear-gradient(130deg, #9AECDB,#F8EFBA,#D6A2E8,#55E6C1,#d1d8e0,#fed330,#feac5e,#c779d0,#4bc0c8,#EAECC6,#bdc3c7,#00FF00);
+  background-image: linear-gradient(140deg, #9AECDB,#F8EFBA,#D6A2E8,#55E6C1,#d1d8e0,#fed330,#feac5e,#c779d0,#4bc0c8,#EAECC6,#bdc3c7,#00FF00,#81ecec,#fab1a0,#55efc4,#ffeaa7,#d2dae2);
   background-size: 600%;
   animation: bganimation 113s infinite;
 
