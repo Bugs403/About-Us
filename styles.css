@@ -1,5 +1,4 @@
-body
-{
+body {
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -7,17 +6,14 @@ body
 	align-items: center;
 	min-height: 100vh;
 }
-.container
-{
+.container {
 	width: 1200px;
 	height: 400px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
-
-.container .box
-{
+.container .box {
 	position: relative;
 	width: 200px;
 	height: 285px;
@@ -25,8 +21,7 @@ body
 	transition: 0.5s;
 	overflow: hidden;
 }
-.container .box img
-{
+.container .box img {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -37,8 +32,7 @@ body
     background-size: 600%;
     animation: bganimation 113s infinite; */
 }
-.container .box:before
-{
+.container .box:before {
 	content: '';
 	position: absolute;
 	top: -100%;
@@ -48,14 +42,11 @@ body
 	/* background: #fff; */
 	z-index: 1;
 	transition: 0.5s;
-	background-image: linear-gradient(140deg, #9AECDB,#F8EFBA,#D6A2E8,#55E6C1,#d1d8e0,#fed330,#feac5e,#c779d0,#4bc0c8,#EAECC6,#bdc3c7,#00FF00,#81ecec,#fab1a0,#55efc4,#ffeaa7,#d2dae2);
-    background-size: 8300%;
-    animation: bganimation 113s infinite;
-
-
+	background-image: linear-gradient(140deg, #9AECDB, #F8EFBA, #D6A2E8, #55E6C1, #d1d8e0, #fed330, #feac5e, #c779d0, #4bc0c8, #EAECC6, #bdc3c7, #00FF00, #81ecec, #fab1a0, #55efc4, #ffeaa7, #d2dae2);
+	background-size: 8300%;
+	animation: bganimation 113s infinite;
 }
-.container .box:after
-{
+.container .box:after {
 	content: '';
 	position: absolute;
 	bottom: -100%;
@@ -65,59 +56,50 @@ body
 	/* background: #fff; */
 	z-index: 1;
 	transition: 0.5s;
-	background-image: linear-gradient(140deg, #9AECDB,#F8EFBA,#D6A2E8,#55E6C1,#d1d8e0,#fed330,#feac5e,#c779d0,#4bc0c8,#EAECC6,#bdc3c7,#00FF00,#81ecec,#fab1a0,#55efc4,#ffeaa7,#d2dae2);
-    background-size: 8300%;
-    animation: bganimation 113s infinite;
-
+	background-image: linear-gradient(140deg, #9AECDB, #F8EFBA, #D6A2E8, #55E6C1, #d1d8e0, #fed330, #feac5e, #c779d0, #4bc0c8, #EAECC6, #bdc3c7, #00FF00, #81ecec, #fab1a0, #55efc4, #ffeaa7, #d2dae2);
+	background-size: 8300%;
+	animation: bganimation 113s infinite;
 }
-.container:hover .box:before
-{
+.container:hover .box:before {
 	top: 0;
 }
-.container:hover .box:after
-{
+.container:hover .box:after {
 	bottom: 0;
 	transition-delay: 0.5s;
 }
-.container .box:hover:before
-{
+.container .box:hover:before {
 	top: -100%;
 }
-.container .box:hover:after
-{
+.container .box:hover:after {
 	bottom: -100%;
 }
-
 @keyframes bganimation {
-  0%{
-    background-position: 0% 50%;
-  }
-  50%{
-    background-position: 100% 50%;
-  }
-  100%{
-    background-position: 0% 50%;
-  }
+	0% {
+		background-position: 0 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0 50%;
+	}
 }
-.animate{
-  background-image: linear-gradient(140deg, #9AECDB,#F8EFBA,#D6A2E8,#55E6C1,#d1d8e0,#fed330,#feac5e,#c779d0,#4bc0c8,#EAECC6,#bdc3c7,#00FF00,#81ecec,#fab1a0,#55efc4,#ffeaa7,#d2dae2);
-  background-size: 600%;
-  animation: bganimation 113s infinite;
-
+.animate {
+	background-image: linear-gradient(140deg, #9AECDB, #F8EFBA, #D6A2E8, #55E6C1, #d1d8e0, #fed330, #feac5e, #c779d0, #4bc0c8, #EAECC6, #bdc3c7, #00FF00, #81ecec, #fab1a0, #55efc4, #ffeaa7, #d2dae2);
+	background-size: 600%;
+	animation: bganimation 113s infinite;
 }
-
-.imageanimate{
+.imageanimate {
 	animation: imganmiate 9s forwards;
 }
-
 @keyframes imganmiate {
-	0%{
-		background-image: linear-gradient(140deg, #9AECDB,#F8EFBA,#D6A2E8,#55E6C1,#d1d8e0,#fed330,#feac5e,#c779d0,#4bc0c8,#EAECC6,#bdc3c7,#00FF00,#81ecec,#fab1a0,#55efc4,#ffeaa7,#d2dae2);
-	    background-size: 600%;
-	    animation: bganimation 113s infinite;
+	0% {
+		background-image: linear-gradient(140deg, #9AECDB, #F8EFBA, #D6A2E8, #55E6C1, #d1d8e0, #fed330, #feac5e, #c779d0, #4bc0c8, #EAECC6, #bdc3c7, #00FF00, #81ecec, #fab1a0, #55efc4, #ffeaa7, #d2dae2);
+		background-size: 600%;
+		animation: bganimation 113s infinite;
 		opacity: 0;
 	}
-	100%{
+	100% {
 		opacity: 1;
 	}
 }
