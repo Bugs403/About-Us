@@ -15,6 +15,7 @@ body
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
+
 .container .box
 {
 	position: relative;
@@ -48,7 +49,7 @@ body
 	z-index: 1;
 	transition: 0.5s;
 	background-image: linear-gradient(140deg, #9AECDB,#F8EFBA,#D6A2E8,#55E6C1,#d1d8e0,#fed330,#feac5e,#c779d0,#4bc0c8,#EAECC6,#bdc3c7,#00FF00,#81ecec,#fab1a0,#55efc4,#ffeaa7,#d2dae2);
-    background-size: 6600%;
+    background-size: 8300%;
     animation: bganimation 113s infinite;
 
 
@@ -65,7 +66,7 @@ body
 	z-index: 1;
 	transition: 0.5s;
 	background-image: linear-gradient(140deg, #9AECDB,#F8EFBA,#D6A2E8,#55E6C1,#d1d8e0,#fed330,#feac5e,#c779d0,#4bc0c8,#EAECC6,#bdc3c7,#00FF00,#81ecec,#fab1a0,#55efc4,#ffeaa7,#d2dae2);
-    background-size: 6600%;
+    background-size: 8300%;
     animation: bganimation 113s infinite;
 
 }
@@ -103,4 +104,20 @@ body
   background-size: 600%;
   animation: bganimation 113s infinite;
 
+}
+
+.imageanimate{
+	animation: imganmiate 9s forwards;
+}
+
+@keyframes imganmiate {
+	0%{
+		background-image: linear-gradient(140deg, #9AECDB,#F8EFBA,#D6A2E8,#55E6C1,#d1d8e0,#fed330,#feac5e,#c779d0,#4bc0c8,#EAECC6,#bdc3c7,#00FF00,#81ecec,#fab1a0,#55efc4,#ffeaa7,#d2dae2);
+	    background-size: 600%;
+	    animation: bganimation 113s infinite;
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
 }
